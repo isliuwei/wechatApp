@@ -1,0 +1,36 @@
+<import src="post-item/post-item-template.wxml" />
+<import src="video/video-template.wxml" />
+<import src="copy/copy-template.wxml" />
+<view>
+
+  <swiper class="swiper-style" indicator-dots="true" autoplay="true" interval="5000">
+    <swiper-item>
+      <image class="swiper-img" src="/images/post/iqiyi.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper-img" src="/images/post/iqiyi.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="swiper-img" src="/images/post/iqiyi.png"></image>
+    </swiper-item>
+  </swiper>
+
+  
+  <block wx:for="{{postData}}">
+      <!-- template -->
+      <view catchtap="toDetail" data-postid="{{item.postId}}">
+        <template is="post-item" data="{{item: item, num: collnum[index]}}"></template>
+      </view>
+  </block>
+
+</view>
+
+<block wx:for="{{videoData}}" wx:for-item="video">
+  <template is="videoTemplate" data="{{...video}}"></template>
+</block>
+
+<template is="copy" data="{{...copydata}}"></template>
+
+
+
+

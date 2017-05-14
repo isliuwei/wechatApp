@@ -1,0 +1,12 @@
+<!-- wxml 页面文件 -->
+<!-- div -->
+<view class="container">
+    <image class="user-avatar" src="/images/mushroom.png"></image>
+    <!-- <image class="user-avatar" src="/images/wx-logo.png"></image> -->
+    <text class="user-name">Hello,<text style="color: #718c00;">微信</text></text>
+    <view class="moto-container" bindtap="onTap">
+        <text class="moto">开启小程序之旅</text>
+    </view>
+</view>
+
+

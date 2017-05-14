@@ -1,0 +1,11 @@
+<template name="copy">
+  <view class="footer">
+    <view class="nav">
+      <text class="nav1" bindtap="toIndex">{{i1}}</text>
+      <text bindtap="toWechat">{{i2}}</text>
+    </view>
+    <view class="copy">
+      <text>copyright©️{{year}}</text>
+    </view>
+  </view>
+</template>

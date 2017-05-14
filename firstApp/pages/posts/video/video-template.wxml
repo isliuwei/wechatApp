@@ -1,0 +1,10 @@
+<template name="videoTemplate">
+    <view class="section">
+      <text>{{singer}} - {{title}} {{movie}} {{type}}</text>
+      <video id="{{elem}}" src="{{url}}" enable-danmu danmu-btn controls></video>
+      <view class="btn-area" wx-if="{{showDanmu}}">
+        <input class="val" bindblur="bindInputBlur"/>
+        <button class="btn" type="primary" size="mini" bindtap="bindSendDanmu">发送弹幕</button>
+      </view>
+    </view>
+</template> 

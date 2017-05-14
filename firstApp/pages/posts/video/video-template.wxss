@@ -1,0 +1,31 @@
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ededed;
+}
+.section text {
+    margin-top: 20rpx;
+    text-align: center;
+}
+
+.section video {
+    margin: 40rpx auto;
+}
+
+.btn-area {
+    display: flex;
+    flex-direction: row;
+    margin: 20rpx auto;
+}
+
+.btn-area .val {
+    border: 1px solid #333;
+    border-radius: 2px 0 0 2px;
+    text-indent: 10px;
+}
+
+.btn-area .btn {
+    border: none;
+    border-radius: 0 2px 2px 0;
+}
